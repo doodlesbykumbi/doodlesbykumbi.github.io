@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>doodlesbykumbi</title>
+  <meta name="description" content="Software, from the bytes up. Projects and talks.">
+  <style>
+    :root {
+      --bg: #fbfbf9; --fg: #1d2421; --dim: #66706b; --rule: #e3e6e3; --accent: #1f8a63;
+      color-scheme: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0c1218; --fg: #dfe7e2; --dim: #8a9a92; --rule: #1e2a2a; --accent: #3dba8b; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--fg);
+      font: 17px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    main { max-width: 36rem; margin: 0 auto; padding: 4.5rem 1.5rem 3rem; }
+    h1 { font: 600 1.6rem/1.2 ui-monospace, "SF Mono", Menlo, monospace; margin: 0 0 .4rem; letter-spacing: -.01em; }
+    .lede { color: var(--dim); margin: 0 0 2.75rem; }
+    h2 {
+      font: 600 .75rem/1 ui-monospace, "SF Mono", Menlo, monospace; text-transform: uppercase;
+      letter-spacing: .12em; color: var(--dim); margin: 2.5rem 0 1rem;
+      padding-bottom: .5rem; border-bottom: 1px solid var(--rule);
+    }
+    ul { list-style: none; margin: 0; padding: 0; }
+    li { margin: 0 0 1.1rem; }
+    .title { font-weight: 600; }
+    .meta { color: var(--dim); font-size: .92rem; }
+    .date { color: var(--dim); font: .8rem/1.4 ui-monospace, "SF Mono", Menlo, monospace; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .links a + a::before { content: "·"; color: var(--dim); margin: 0 .45rem; }
+    footer { margin-top: 3.5rem; color: var(--dim); font-size: .85rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>doodlesbykumbi</h1>
+    <p class="lede">Software engineer. I like taking systems apart to see how they work, then building small ones from the bytes up.</p>
+
+    <h2>Talks</h2>
+    <ul>
+      <li>
+        <div class="date">October 2026</div>
+        <div class="title">From TAP to curl: building a userspace TCP stack in Go</div>
+        <div class="meta">Ethernet, ARP, IPv4, TCP, TLS and HTTP, one layer at a time.</div>
+        <div class="links"><a href="/mytcp/talk/">Slides</a><a href="https://github.com/doodlesbykumbi/mytcp">Code</a></div>
+      </li>
+    </ul>
+
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <a class="title" href="https://github.com/doodlesbykumbi/mytcp">mytcp</a>
+        <div class="meta">A teaching TCP/IP stack over a Linux TAP device. Serves curl, and fetches google.com with no kernel sockets.</div>
+      </li>
+    </ul>
+
+    <h2>Elsewhere</h2>
+    <p class="links"><a href="https://github.com/doodlesbykumbi">GitHub</a></p>
+
+    <footer>doodlesbykumbi.github.io</footer>
+  </main>
+</body>
+</html>
